@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream TV and Movies Live and Online </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
 </head>
 <body>
     <header id="header">
@@ -28,7 +29,7 @@
             <img src="img/hero-img.png" alt="background" class="logos">
             <p>Get endless entertainment, live sports, and the shows and movies you love.</p>
             <a href="#" class="btn-hero">Get the disney bundle</a>
-            <span><a href="#">Whats Included?</a> See <a href="">Bundle Terma.</a></span>
+            <span><a href="#" class="btnincluded">Whats Included?</a> See <a href="">Bundle Terma.</a></span>
             <a href="" class="btn-cta">Sign up for hulu only</a>
         </div>
     </header>
@@ -81,32 +82,22 @@
         <h5 class="vantagens__subtitle">Hulu + Live Tv, now with Disney+ and Espn+</h5>
         <h2 class="vantagens__titulo">Live TV Makes It Better</h2>
         <p class="vantagens__description">Make the switch from cable. Get 75+ top channels on Hulu with your favorite live sports, news, and events - plus the entire Hulu streaming library. With Unlimited DVR, store Live TV recordings for up to nine months and fast-forward through your DVR content. Access endless entertainment with Disney+ and live sports with ESPN+. All three for a new price of $69.99/month.</p>
-        <p class="vantagens__restriction">18+ only. Regional restrictions, blackouts and Live TV terms apply. Access content from each service separately and access ESPN+ content via Hulu. Location data required to watch certain content. Offer valid for eligible subscribers only. 
-            Unlimited DVR recording is not available for on-demand shows.</p> 
+        <p class="vantagens__restriction">Ends 11:59 PM PST on 10/5/22. Offer for Hulu (ad-supported) + Live TV plan only. $49.99/month for 3 months, then auto-renews at $69.99/month or then-current regular monthly price. Price will increase to $74.99/month as of 12/8/22. Cancel anytime, effective at the end of your billing period. Valid for eligible new and returning Hulu subscribers (who have not had Hulu in the past 1 month), 18+ only. Savings compared to regular monthly price. <a href="" class="vantagens__additionallink">Additional offer terms apply</a></p> 
         <a href="#" class="btn__channels-area">View Channels in your area →</a>
-        <button class="vantagens__btn"> <a href="#categorias">↓</a></button>
+        <button class="vantagens__btn"> <a href="#tab__container">↓</a></button>
     </section>
     
-    <section id="categorias">
-        <div class="categoria">
-            <a href="">Live Sports</a>
-            <a href="">Breaking News</a>
-            <a href="">Biggest Events</a>
+    <section id="tab__container">
+        <div class="tab__nav">
+            <a href="" class="tab__link active" data-id="livesports">Live Sports</a>
+            <a href="" class="tab__link" data-id="breakingnews">Breaking News</a>
+            <a href="" class="tab__link" data-id="biggestevents">Biggest Events</a>
         </div>
-        <h3>Live Sports</h3>
-        <p>Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
-        <div class="channels-logos">
-            <div class="logo">
-                <img src="img/cbs.png" alt="">
-            </div>
-            <div class="logo">
-                <img src="img/espn.png" alt="">
-            </div>
-            <div class="logo">
-                <img src="img/fs1.svg" alt="">
-            </div>
-            <div class="logo">
-                <img src="img/nfl-logo.png" alt="">
+        <div class="tab__content">
+            <h3>Live Sports</h3>
+            <p>Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
+            <div class="tab__content-logos">
+              
             </div>
         </div>
         <span>Live TV plan required. Regional restrictions, blackouts and additional terms apply. 
@@ -303,5 +294,101 @@
                 </div>
         </div>
     </footer>
+
+    <div class="modals">
+        <div class="modal-login">
+            <div class="modal-login__container">
+                <button class="modal-login__close">X</button>
+                <form action="">
+                    <h4 class="modal-login__title">Log in</h4>
+                    <label for="email">Email</label>
+                    <input type="text" name="" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="passoword" autocomplete="">
+                    <a href="" class="modal-login__forgotpass">Forgot your email or password?</a> 
+                    <button type="submit" class="modal-login__btnsubmit">Log in</button>
+                </form>
+                <p>Don't have an account?<a href=""> Start your free trial</a></p>
+            </div>
+        </div>
+
+        <div class="modal-included">
+            <div class="modal-included__container">
+                <button class="modal-included__close">X</button>
+                <h5 class="modal-included__title">What's Included in The Disney Bundle?</h5>
+                <ul>
+                    <li class="modal-included__item"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6095 0.390524C22.1302 0.911223 22.1302 1.75544 21.6095 2.27614L7.60948 16.2761C7.08878 16.7968 6.24456 16.7968 5.72386 16.2761L0.390524 10.9428C-0.130175 10.4221 -0.130175 9.57789 0.390524 9.05719C0.911223 8.53649 1.75544 8.53649 2.27614 9.05719L6.66667 13.4477L19.7239 0.390524C20.2446 -0.130175 21.0888 -0.130175 21.6095 0.390524Z" fill="#000"/>
+                        </svg>
+                        Subscriptions to Disney+, ESPN+, and Hulu for a discounted price. Available with Hulu (ad-supported) for $13.99/month or with Hulu (No Ads) for $19.99/month.
+                    </li>
+                    <li class="modal-included__item"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6095 0.390524C22.1302 0.911223 22.1302 1.75544 21.6095 2.27614L7.60948 16.2761C7.08878 16.7968 6.24456 16.7968 5.72386 16.2761L0.390524 10.9428C-0.130175 10.4221 -0.130175 9.57789 0.390524 9.05719C0.911223 8.53649 1.75544 8.53649 2.27614 9.05719L6.66667 13.4477L19.7239 0.390524C20.2446 -0.130175 21.0888 -0.130175 21.6095 0.390524Z" fill="#000"/>
+                            </svg>
+                            Savings of $7.98/month compared to the regular price of each service.
+                    </li>
+                    <li class="modal-included__item"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6095 0.390524C22.1302 0.911223 22.1302 1.75544 21.6095 2.27614L7.60948 16.2761C7.08878 16.7968 6.24456 16.7968 5.72386 16.2761L0.390524 10.9428C-0.130175 10.4221 -0.130175 9.57789 0.390524 9.05719C0.911223 8.53649 1.75544 8.53649 2.27614 9.05719L6.66667 13.4477L19.7239 0.390524C20.2446 -0.130175 21.0888 -0.130175 21.6095 0.390524Z" fill="#000"/>
+                        </svg>
+                        Enjoy all your favorite shows, movies, sports, and more using the Disney+, Hulu, and ESPN apps (or sites, for those on a browser). Download each app separately to access each service.
+                </li>
+                <li class="modal-included__item"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6095 0.390524C22.1302 0.911223 22.1302 1.75544 21.6095 2.27614L7.60948 16.2761C7.08878 16.7968 6.24456 16.7968 5.72386 16.2761L0.390524 10.9428C-0.130175 10.4221 -0.130175 9.57789 0.390524 9.05719C0.911223 8.53649 1.75544 8.53649 2.27614 9.05719L6.66667 13.4477L19.7239 0.390524C20.2446 -0.130175 21.0888 -0.130175 21.6095 0.390524Z" fill="#000"/>
+                    </svg>
+                    Access select ESPN+ content via Hulu.
+                </li>
+                <li class="modal-included__item"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6095 0.390524C22.1302 0.911223 22.1302 1.75544 21.6095 2.27614L7.60948 16.2761C7.08878 16.7968 6.24456 16.7968 5.72386 16.2761L0.390524 10.9428C-0.130175 10.4221 -0.130175 9.57789 0.390524 9.05719C0.911223 8.53649 1.75544 8.53649 2.27614 9.05719L6.66667 13.4477L19.7239 0.390524C20.2446 -0.130175 21.0888 -0.130175 21.6095 0.390524Z" fill="#000"/>
+                    </svg>
+                    Cancel anytime.
+                </li>
+                </ul>
+                <p>No free trial available. Savings compared to regular price for each service. 18+ only.</p>
+            </div>
+        </div>
+
+        <div class="modal-categories">
+                <div class="modal-categories__container">
+                    <button class="modal-categories__close">X</button>
+                        <img src="" alt="">
+                        <div class="modal-categories__subtitle">TV Show</div>
+                        <div class="modal-categories__title">TV show</div>
+                        <div class="modal-categories__description">Watch past seasons of exclusive shows, current-season episodes the day after they air, 40+ acclaimed series from FX, classic favorites, and tons more.</div>
+                     </div>
+        </div>
+        
+        <div class="modal-channels">
+            <div class="modal-channels__container">
+                <button class="modal-channels__close">X</button>
+                <h5 class="modal-channels__title">Channels in your area</h5>
+                <p class="modal-channels__description">Enter your home ZIP code for channels available in your area.</p>
+                <div class="modal-channels__zip-code">
+                    <input type="number" name="zip" id="" placeholder="Enter zip code">
+                    <button type="submit" class="modal-channels__btn-submit">Submit</button>
+                </div>
+                <p class="modal-channels__note">Live TV is available for those live local, regional, and national channels available in your area, which are subject to change. Select channels may offer only on demand content. Certain channels or content may not be available in all locations or on all devices.</p>
+            </div>
+        </div>
+
+        <div class="modal-additional">
+            <div class="modal-additional__container">
+                <button class="modal-additional__close">X</button>
+                <p class="modal-additional__paragraphy">
+                   Hulu + Live TV Discount Offer: Not combinable with any other promotional offers or pricing. Offer excludes select third party billed subscribers and current Disney+ and/or ESPN+ subscribers. 
+                   Any plan switch after redemption of this offer will result in forfeiture of the Hulu + Live TV discount pricing. Regional restrictions, blackouts and Live TV terms apply. Disney+/ESPN+/Hulu content: Access content from each service separately and access ESPN+ content via Hulu.
+                    Location data required to watch certain content. ©2022 Disney and its related entities.
+                </p>
+                <p class="modal-additional__paragraphy">
+                    Live TV: 18+ only. Any free trials valid for new and eligible returning subscribers only. For personal and non-commercial use only. Live TV is available in the 50 United States and the District of Columbia only. Compatible device and high-speed, broadband Internet connection required. Multiple concurrent streams and HD content may require higher bandwidth. Streaming content may count against your data usage. Location data required to access content. Live TV may vary by subscription and location. Click here to check channel availability in your area. Programming subject to regional availability, blackouts, and device restrictions. Number of permitted concurrent streams will vary based on the terms of your subscription. Cloud DVR storage space is limited. Pricing, channels, features, content, and compatible devices subject to change. Please review our  Terms of Use and Privacy Policy.
+                 </p>
+                 <p class="modal-additional__paragraphy">
+                   For Live TV, now with Disney+ and ESPN+: if you already have existing subscription(s) with Disney+ and/or ESPN+, you may sign up without cancelling your existing subscription(s). Amount charged will be adjusted to account for those existing subscription(s) as long as they are maintained. Existing subscription(s) with Disney+ and/or ESPN+ will not be changed or replaced by Live TV. Access content from each service separately, and select ESPN+ content via Hulu. Certain account information provided to Disney+ and/or ESPN+ for activation and administration.
+                 </p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script type="module" src="main.js"></script>
 </body>
 </html>
